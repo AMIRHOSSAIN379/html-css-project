@@ -40,6 +40,9 @@ Variables
       font-size: 1.75rem;
   
     }
+    h4{
+      font-size: 1.25rem;
+    }
 }
 h1{
   font-size: 1.75rem;
@@ -47,6 +50,9 @@ h1{
   h2{
     font-size: 1.5rem;
 
+  }
+  h4{
+    font-size: 1rem;
   }
 body{
   background: var(--clr-white);
@@ -95,4 +101,61 @@ a{
   font-size: 1.25rem;
   outline: 0.125rem solid var(--clr-primary);
   outline-offset: .25rem;
+}
+.content-divider{
+  height: .5rem;
+  background: linear-gradient(to left, var(--clr-primary), var(--clr-primary-light), var(--clr-primary));
+}
+.features{
+  background: var(--clr-grey-10);
+}
+.feature-item{
+  height: 260px;
+  text-align: center;
+  padding: 2.5rem 0;
+
+}
+.feature-item:hover{
+  background: var(--clr-white);
+  transition: var(--transition);
+  box-shadow: 0 2px 0 var(--clr-primary);
+
+}
+.feature-item:hover .feature-icon{
+  transform: translateY(-5px);
+  transition: var(--transition);
+
+}
+.feature-icon{
+    font-size: 2rem;
+    color: var(--clr-primary);
+    display: inline-block;
+    margin-bottom: 1.25rem;
+}
+.feature-title{
+  margin-bottom: 1rem;
+}
+.feature-text{
+  color: var(--clr-grey-5);
+  max-width: 17rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 576px) {
+  .feature-item{
+    float: right;
+    width: 50%;
+  }
+  
+}
+@media screen and (min-width: 1200px) {
+  .feature-item{
+    float: right;
+    width: 25%;
+  }
+  
+}
+.clearfix::after, .clearfix::before{
+  content: '';
+  clear: both;
+  display: block;
 }

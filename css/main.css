@@ -29,8 +29,25 @@ Variables
   --clr-grey-10: #f1f5f8;
   --clr-white: #fff;
   --ff-primary: "vazir", sans-serif;
+  --transition: all .3s linear;
+  --reduis: .5rem;
 }
+@media screen and (min-width: 800px) {
+  h1{
+    font-size: 2rem;
+  }
+    h2{
+      font-size: 1.75rem;
+  
+    }
+}
+h1{
+  font-size: 1.75rem;
+}
+  h2{
+    font-size: 1.5rem;
 
+  }
 body{
   background: var(--clr-white);
   color: var(--clr-grey-5);
@@ -52,4 +69,30 @@ a{
   left: 50%;
   top: 50%;
   text-align: center;
+  width: 100%;
+}
+.banner h1{
+  color: var(--clr-primary);
+  margin-bottom: 2rem;
+}
+.banner h2{
+  color: var(--clr-white);
+  margin-bottom: 3rem;
+}
+.btn{
+  padding: .5rem 1rem;
+  border-radius: var(--reduis);
+  background: var(--clr-primary);
+  color: var(--clr-white);
+}
+.btn:hover{
+   transition: var(--transition);
+   background: var(--clr-primary-light);
+   color: var(--clr-primary);
+}
+.btn-banner{
+  padding: .75rem 1.25rem;
+  font-size: 1.25rem;
+  outline: 0.125rem solid var(--clr-primary);
+  outline-offset: .25rem;
 }
